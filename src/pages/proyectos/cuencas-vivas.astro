@@ -1,0 +1,581 @@
+---
+import CuencasLayout from "../../layouts/CuencasLayout.astro";
+---
+
+<CuencasLayout title="Proyecto Cuencas Vivas">
+    <!-- Hero Section -->
+    <section
+        class="relative h-[90vh] flex items-center bg-cover bg-center"
+        style="background-image: url('/assets/img/ok-gal02.jpg');"
+    >
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-green-900/90 to-transparent"
+        >
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 w-full text-white">
+            <div class="max-w-2xl" data-aos="fade-right">
+                <h1
+                    class="text-5xl md:text-6xl font-bold font-outfit mb-6 leading-tight"
+                    style="color: rgb(255, 255, 255);"
+                >
+                    Adaptación Innovadora en Ecosistemas Vulnerables
+                </h1>
+                <p class="text-xl opacity-90 mb-8 font-light">
+                    Gestionamos sosteniblemente las cuencas para garantizar la
+                    seguridad hídrica y alimentaria en el norte del Perú.
+                </p>
+                <a
+                    href="#proyecto"
+                    class="bg-white text-green-900 font-bold py-3 px-8 rounded-full hover:bg-green-50 transition-colors shadow-lg inline-flex items-center gap-2"
+                >
+                    Conocer Proyecto
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        ><path
+                            fill-rule="evenodd"
+                            d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path></svg
+                    >
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Project -->
+    <section id="proyecto" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-outfit text-gray-900 mb-4">
+                    Sobre el Proyecto
+                </h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center">
+                    <img
+                        src="/assets/img/1-logo-cuencas-vivas.png"
+                        alt="Logo Cuencas Vivas"
+                        class="max-w-xs md:max-w-md drop-shadow-xl hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+                <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                        El <strong class="text-green-700"
+                            >Fondo para La Adaptación Innovadora en Ecosistemas
+                            Vulnerables del Norte del Perú o “Cuencas Vivas”</strong
+                        > es un proyecto integral de adaptación al cambio climático.
+                    </p>
+                    <p>
+                        Nuestro objetivo es proteger los ecosistemas vitales e
+                        impulsar actividades productivas sostenibles que
+                        contribuyan directamente a la seguridad alimentaria de
+                        las poblaciones locales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Components -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2
+                    class="text-4xl md:text-5xl font-bold font-outfit text-gray-900 mb-6"
+                >
+                    Componentes Estratégicos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Pilares fundamentales para la sostenibilidad de las cuencas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Component 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group"
+                >
+                    <div class="p-10 text-center">
+                        <div
+                            class="w-28 h-28 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform"
+                        >
+                            <img
+                                src="/assets/img/COMP-E02.png"
+                                alt="Icono Adaptación"
+                                class="h-16 w-auto"
+                            />
+                        </div>
+                        <h3
+                            class="text-2xl font-bold font-outfit text-gray-900 mb-4"
+                        >
+                            Adaptación al Cambio Climático
+                        </h3>
+                        <p class="text-gray-600 text-base leading-relaxed">
+                            Reducimos la vulnerabilidad mediante sistemas de
+                            alerta temprana y mejorando la respuesta local ante
+                            riesgos climáticos extremos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group"
+                >
+                    <div class="p-10 text-center">
+                        <div
+                            class="w-28 h-28 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform"
+                        >
+                            <img
+                                src="/assets/img/COMP-E03.png"
+                                alt="Icono Ecosistemas"
+                                class="h-16 w-auto"
+                            />
+                        </div>
+                        <h3
+                            class="text-2xl font-bold font-outfit text-gray-900 mb-4"
+                        >
+                            Protección de Ecosistemas
+                        </h3>
+                        <p class="text-gray-600 text-base leading-relaxed">
+                            Restauramos ecosistemas hídricos y forestales en
+                            zonas prioritarias para asegurar la disponibilidad
+                            de agua a futuro.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group"
+                >
+                    <div class="p-10 text-center">
+                        <div
+                            class="w-28 h-28 mx-auto bg-yellow-50 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform"
+                        >
+                            <img
+                                src="/assets/img/COMP-E04.png"
+                                alt="Icono Seguridad"
+                                class="h-16 w-auto"
+                            />
+                        </div>
+                        <h3
+                            class="text-2xl font-bold font-outfit text-gray-900 mb-4"
+                        >
+                            Seguridad Alimentaria
+                        </h3>
+                        <p class="text-gray-600 text-base leading-relaxed">
+                            Diversificamos actividades productivas sostenibles
+                            para compensar pérdidas y garantizar el sustento
+                            familiar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2
+                class="text-center text-4xl md:text-5xl font-bold font-outfit mb-20"
+            >
+                Alianza Estratégica
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start">
+                <!-- Adaptation Fund -->
+                <div class="text-center">
+                    <img
+                        src="/assets/img/logos/lg-adaptation-fund.png"
+                        alt="Adaptation Fund"
+                        class="h-36 w-auto mx-auto mb-8"
+                    />
+                    <h3 class="text-xl font-bold text-green-800 mb-3">
+                        Entidad Aportante
+                    </h3>
+                    <p
+                        class="text-base text-gray-600 max-w-xs mx-auto leading-relaxed"
+                    >
+                        Mecanismo financiero internacional bajo el Protocolo de
+                        Kioto.
+                    </p>
+                </div>
+                <!-- Profonanpe -->
+                <div class="text-center">
+                    <img
+                        src="/assets/img/logos/lg-profonanpe.png"
+                        alt="Profonanpe"
+                        class="h-32 w-auto mx-auto mb-8"
+                    />
+                    <h3 class="text-xl font-bold text-green-800 mb-3">
+                        Entidad Ejecutora
+                    </h3>
+                    <p
+                        class="text-base text-gray-600 max-w-xs mx-auto leading-relaxed"
+                    >
+                        Fondo ambiental privado más grande del Perú.
+                    </p>
+                </div>
+                <!-- IMAR -->
+                <div class="text-center">
+                    <img
+                        src="/assets/img/0-logo-imar.png"
+                        alt="IMAR"
+                        class="h-32 w-auto mx-auto mb-8"
+                    />
+                    <h3 class="text-xl font-bold text-green-800 mb-3">
+                        Socio Ejecutor
+                    </h3>
+                    <p
+                        class="text-base text-gray-600 max-w-xs mx-auto leading-relaxed"
+                    >
+                        Cuenca Chancay - Lambayeque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Area / Banner -->
+    <section
+        id="stats-section"
+        class="py-20 bg-green-900 text-white relative overflow-hidden"
+    >
+        <div
+            class="absolute inset-0 opacity-10"
+            style="background-image: url('/assets/img/pattern.png');"
+        >
+        </div>
+        <!-- Optional pattern -->
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-outfit mb-8">
+                Donde nace el agua, florece la vida
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto opacity-90 mb-12">
+                Trabajamos en las zonas altoandinas porque son la fuente del
+                recurso hídrico que sostiene la vida y la agricultura aguas
+                abajo.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-green-400 mb-2">
+                        <span class="counter" data-target="10" data-prefix="+"
+                            >0</span
+                        >
+                    </div>
+                    <div class="text-sm uppercase tracking-wide opacity-80">
+                        Comunidades Beneficiadas
+                    </div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-green-400 mb-2">
+                        <span class="counter" data-target="500" data-suffix="ha"
+                            >0</span
+                        >
+                    </div>
+                    <div class="text-sm uppercase tracking-wide opacity-80">
+                        Reforestadas
+                    </div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-green-400 mb-2">
+                        <span class="counter" data-target="100" data-suffix="%"
+                            >0</span
+                        >
+                    </div>
+                    <div class="text-sm uppercase tracking-wide opacity-80">
+                        Compromiso
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Counter Animation with Intersection Observer
+        document.addEventListener("DOMContentLoaded", (): void => {
+            const counters: NodeListOf<Element> =
+                document.querySelectorAll(".counter");
+            const statsSection: HTMLElement | null =
+                document.getElementById("stats-section");
+            let animated: boolean = false;
+
+            const animateCounters = (): void => {
+                if (animated) return;
+                animated = true;
+
+                counters.forEach((counter: Element): void => {
+                    const target: number = parseInt(
+                        counter.getAttribute("data-target") || "0",
+                        10,
+                    );
+                    const prefix: string =
+                        counter.getAttribute("data-prefix") || "";
+                    const suffix: string =
+                        counter.getAttribute("data-suffix") || "";
+                    const duration: number = 2000; // 2 seconds
+                    const increment: number = target / (duration / 16); // 60fps
+                    let current: number = 0;
+
+                    const updateCounter = (): void => {
+                        current += increment;
+                        if (current < target) {
+                            counter.textContent =
+                                prefix + Math.ceil(current) + suffix;
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = prefix + target + suffix;
+                        }
+                    };
+
+                    updateCounter();
+                });
+            };
+
+            // Intersection Observer to trigger animation when section is visible
+            const observer: IntersectionObserver = new IntersectionObserver(
+                (entries: IntersectionObserverEntry[]): void => {
+                    entries.forEach(
+                        (entry: IntersectionObserverEntry): void => {
+                            if (entry.isIntersecting) {
+                                animateCounters();
+                            }
+                        },
+                    );
+                },
+                { threshold: 0.5 },
+            );
+
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        });
+    </script>
+
+    <!-- Zonas de Intervención -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-outfit text-gray-900 mb-4">
+                    Zonas de Intervención
+                </h2>
+                <h3 class="text-xl text-green-700 font-semibold mb-4">
+                    Cuenca Chancay-Lambayeque
+                </h3>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    <strong>La Cuenca Chancay-Lambayeque</strong>, una zona
+                    clave para la seguridad hídrica y alimentaria del norte del
+                    Perú. Las acciones se concentran en áreas rurales
+                    vulnerables al cambio climático, principalmente la parte
+                    alta de Cuenca que abarca 4 provincias y 19 distritos de <strong
+                        >Cajamarca</strong
+                    >.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2">
+                    <div class="bg-gray-50 rounded-2xl p-4 shadow-lg">
+                        <h4
+                            class="text-center text-lg font-semibold text-gray-700 mb-4"
+                        >
+                            Mapa
+                        </h4>
+                        <div
+                            class="w-full h-1 bg-amber-500 mx-auto mb-4 max-w-[100px] rounded-full"
+                        >
+                        </div>
+                        <img
+                            src="/assets/img/mapa-cuencas-vivas-sf.png"
+                            alt="Mapa Cuenca Chancay-Lambayeque"
+                            class="w-full rounded-xl"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="/assets/img/leyenda-sf.png"
+                        alt="Leyenda del mapa"
+                        class="w-full rounded-xl shadow-lg"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aliados Locales -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-outfit text-gray-900 mb-4">
+                    Aliados Locales en la Acción Climática
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    <strong>Cuencas Vivas</strong> avanza junto a gobiernos regionales,
+                    locales, juntas de usuarios, instituciones técnicas, instituciones
+                    especializadas, instituciones de estudios superiores y organizaciones
+                    base, impulsando la gestión sostenible del agua, la protección
+                    de ecosistemas y nuevas actividades productivas que refuercen
+                    la seguridad alimentaria.
+                </p>
+            </div>
+
+            <div class="flex items-center gap-8">
+                <div class="hidden lg:block">
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Nuestros Aliados
+                    </h3>
+                </div>
+                <div class="flex-1 overflow-hidden">
+                    <div
+                        class="flex gap-8 items-center justify-center flex-wrap"
+                    >
+                        <img
+                            src="/assets/img/a01.png"
+                            alt="Aliado 1"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a02.png"
+                            alt="Aliado 2"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a03.png"
+                            alt="Aliado 3"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a04.png"
+                            alt="Aliado 4"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a05.png"
+                            alt="Aliado 5"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a06.png"
+                            alt="Aliado 6"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                        <img
+                            src="/assets/img/a07.png"
+                            alt="Aliado 7"
+                            class="h-16 w-auto grayscale hover:grayscale-0 transition-all hover:scale-125"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Multimedia -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-outfit text-gray-900 mb-4">
+                    Galería Multimedia
+                </h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                >
+                    <img
+                        src="/assets/img/ok-gal01.jpg"
+                        alt="Galería 1"
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                    >
+                        <span class="text-white font-semibold"
+                            >Trabajo en campo</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                >
+                    <img
+                        src="/assets/img/ok-gal02.jpg"
+                        alt="Galería 2"
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                    >
+                        <span class="text-white font-semibold"
+                            >Ecosistemas protegidos</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                >
+                    <img
+                        src="/assets/img/ok-gal03.jpg"
+                        alt="Galería 3"
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                    >
+                        <span class="text-white font-semibold"
+                            >Comunidades beneficiadas</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                >
+                    <img
+                        src="/assets/img/ok-gal04.jpg"
+                        alt="Galería 4"
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                    >
+                        <span class="text-white font-semibold"
+                            >Capacitación local</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                >
+                    <img
+                        src="/assets/img/ok-gal05.jpg"
+                        alt="Galería 5"
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+                    >
+                        <span class="text-white font-semibold"
+                            >Recursos hídricos</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer bg-green-600 flex items-center justify-center"
+                >
+                    <div class="text-center text-white p-6">
+                        <div class="text-4xl mb-2">📷</div>
+                        <p class="font-semibold">Ver más fotos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</CuencasLayout>

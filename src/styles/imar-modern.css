@@ -1,0 +1,246 @@
+/* IMAR Modern - Minimalist Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #0056b3; /* Deep Blue - Trust */
+    --secondary-color: #0099cc; /* Lighter Blue - Water */
+    --accent-color: #07d5c0; /* Teal - Freshness */
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --border-radius: 8px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+a {
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+/* Navbar */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    padding: 15px 0;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.navbar a {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 15px !important;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus {
+    color: var(--primary-color) !important;
+}
+
+.getstarted {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+    border-radius: 50px !important;
+    padding: 10px 25px !important;
+    margin-left: 20px;
+}
+
+.getstarted:hover {
+    background: var(--secondary-color) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: ""; /* Overlay is handled by carousel items individually now, or we can add global */
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.btn-get-started {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-get-started:hover {
+    background: #06c6b2;
+    color: var(--white);
+}
+
+/* Section General */
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: var(--primary-color);
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #444444;
+}
+
+/* About Section */
+.about .content {
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Values Section */
+.values .box {
+    padding: 30px;
+    box-shadow: 0px 10px 29px 0px rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    height: 100%;
+    border-bottom: 3px solid #fff;
+}
+
+.values .box:hover {
+    transform: translateY(-5px);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Features/Services */
+.feature-box {
+    padding: 24px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.feature-box i {
+    color: var(--accent-color);
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* Clients/Sponsors */
+.clients {
+    padding: 40px 0;
+    background: var(--bg-light);
+}
+
+.clients img {
+    opacity: 0.6;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+
+.clients img:hover {
+    opacity: 1;
+    filter: none;
+}
+
+/* Stats/Counts */
+.count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--border-radius);
+}
+
+.count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 700;
+    color: var(--primary-color);
+}

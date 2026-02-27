@@ -1,0 +1,1010 @@
+:root {
+  --main-bg-color: white !important;
+  --main-bg-color-danger: #ff4324 !important;
+  --main-bg-color-warning: #ff8d3d !important;
+  --main-bg-color-grey: #1a2b3c !important;
+  --main-bg-color-dark: #020407 !important;
+  --main-bg-color-white: #f0f2f2 !important;
+  --main-bg-color-secondary: #224561 !important;
+  --main-text-color-danger: #ff4324 !important;
+  --main-text-color-warning: #ff8d3d !important;
+  --main-text-color-grey: #1a2b3c !important;
+  --main-text-color-dark: #020407 !important;
+  --main-text-color-white: #f0f2f2 !important;
+  --main-text-color-secondary: #224561 !important;
+
+  --main-textcolor-primary: #003E7D !important;
+  --main-textcolor-info: #08BCFB !important;
+  --main-bg-color-primary: #004383 !important;
+
+  --main-bgcolor-info: #08BCFB !important;
+
+  --main-bg-circle-out-focus: #56517e !important;
+  --main-bg-circle-in-focus: #1d1655 !important;
+
+  --main-color-info-imar: #1c6c84 !important;
+  /*  rgb(37, 150, 190)  */
+  --main-color-success-imar: #047b25 !important;
+  /*  #66b47c */
+
+  --color-entidad-01-green: #acd454 !important;
+  --color-entidad-02-blue: #082cac !important;
+}
+
+.navbar-item-text-color li a {
+  color: var(--main-text-color-grey) !important;
+}
+
+ul li a.active-nav {
+  color: var(--main-text-color-warning) !important;
+  font-weight: bold !important;
+}
+
+.main-bg-color-circle-out {
+  background: var(--main-bg-circle-out-focus) !important;
+}
+
+.main-bg-color-circle-in {
+  background: var(--main-bg-circle-in-focus) !important;
+}
+
+.main_bg_color_white {
+  background-color: white !important;
+}
+
+.text_color_primary {
+  color: var(--main-textcolor-primary);
+}
+
+.text_color_info {
+  color: var(--main-textcolor-info);
+}
+
+.bg_gradient_info_to_primary {
+  background: linear-gradient(to right, #08BCFB, #003E7D);
+}
+
+.bg_gradient_warning_to_danger {
+  background: linear-gradient(to right, #08BCFB, #003E7D);
+}
+
+.bg_color_primary {
+  background-color: var(--main-bg-color-primary);
+}
+
+.bg_color_info {
+  background-color: var(--main-bgcolor-info);
+}
+
+#escoge-tu-ptoxima-habilidad .card,
+#innovacion-empresarial .card,
+#tipos-de-certificados .card,
+#section-services .card,
+#section-services-info .card,
+#section-cursos-cursos .card {
+  box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;
+}
+
+.btn-rounded-20p {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.div-icon-big {
+  width: 220px !important;
+  height: 220px !important;
+  align-items: center !important;
+
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  height: 100vh;
+
+}
+
+.icon-big {
+  font-size: 8rem !important;
+}
+
+.main-bg-color-danger {
+  background-color: var(--main-text-color-danger);
+}
+
+.main-bg-color-warning {
+  background-color: var(--main-text-color-warning);
+}
+
+.main-bg-color-grey {
+  background-color: var(--main-text-color-grey);
+}
+
+.main-bg-color-dark {
+  background-color: var(--main-text-color-dark);
+}
+
+.main-bg-color-white {
+  background-color: var(--main-text-color-white);
+}
+
+.main-bg-color-secondary {
+  background-color: var(--main-text-color-secondary);
+}
+
+.text-color-danger {
+  color: var(--main-text-color-danger);
+}
+
+.text-color-warning {
+  color: var(--main-text-color-warning);
+}
+
+.text-color-grey,
+.text-dark {
+  color: var(--main-text-color-grey);
+}
+
+.text-color-dark {
+  color: var(--main-text-color-dark);
+}
+
+.text-color-white {
+  color: var(--main-text-color-white);
+}
+
+.text-color-secondary {
+  color: var(--main-text-color-secondary);
+}
+
+.hero-title {
+  font-size: 4rem !important;
+  font-weight: lighter !important;
+}
+
+p.text-dark {
+  font-size: 1.4rem !important;
+  color: black !important;
+}
+
+.card-container {
+  perspective: 1000px;
+  /* Habilita la perspectiva 3D */
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.card-flip {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -ms-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+  /* Efecto de giro al hacer hover */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+  box-shadow: var(--main-bg-color-secondary) 10px 10px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Oculta el lado posterior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-front {
+  /*background-color: var(--main-bg-color-white);*/
+  color: var(--main-text-color-white);
+  font-size: 3rem !important;
+}
+
+.card-back {
+  padding: 20px;
+  background-color: var(--main-bg-color-grey);
+  color: var(--main-text-color-grey);
+  font-size: 1rem;
+  transform: rotateY(180deg);
+  /* Gira la parte trasera para que no sea visible inicialmente */
+}
+
+.active-nav-item {
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
+.nav-item:hover {
+  opacity: 1 !important;
+  color: var(--main-text-color-warning) !important;
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
+.div-marca-agua {
+  /*background: url('../img/esce.png') no-repeat;*/
+  /*background-position: right bottom;*/
+  /*background-size: 150px;*/
+  /* Tamaño de la imagen, ajusta según necesidad */
+  /*height: 100vh;*/
+  /* Altura del div */
+  width: 100%;
+  /* Ancho del div */
+}
+
+.div-marca-agua::after,
+.card-front::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../img/esce.png') no-repeat;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.card-carousel {
+  /*background-image: url('../img/esce.png');*/
+  overflow: hidden;
+  /* Oculta la parte no visible de la imagen */
+  position: relative;
+  /*background-color: rgba(0, 0, 0, 0.5) !important;*/
+  /*cursor: pointer;*/
+  opacity: 0.8 !important;
+}
+
+.card-carousel:hover {
+  box-shadow: 20px 20px var(--main-bg-colot-warning) !important;
+  opacity: 1 !important;
+}
+
+.card-carousel:hover h6,
+.card-carousel:hover button {
+  /*font-size: 2rem !important;
+  */
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+}
+
+.card-carousel:hover button,
+.card-carousel button:hover {
+  text-decoration-line: underline;
+  background-color: var(--main-text-color-grey) !important;
+  color: var(--main-bg-color-white) !important;
+  -moz-text-decoration-line: underline;
+}
+
+.imagen-telon {
+  position: absolute;
+  top: -100%;
+  /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease;
+  /* Animación suave al hacer hover */
+}
+
+.card-carousel:hover .imagen-telon {
+  opacity: 0.3 !important;
+  top: 0;
+  /* La imagen se desplaza hacia abajo como un telón */
+}
+
+/** Teching the theachers */
+.ttt-card-carousel {
+  position: relative;
+  overflow: hidden;
+  /* Oculta el telón cuando no está activo */
+  transition: all 0.5s ease-in-out;
+}
+
+.ttt-card-carousel::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color-secondary);
+  transition: top 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.ttt-card-carousel:hover::before {
+  top: 0;
+  /* El telón baja completamente */
+}
+
+.ttt-imagen-telon {
+  position: absolute;
+  top: -100%;
+  /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease;
+  /* Animación suave al hacer hover */
+}
+
+.ttt-card-carousel:hover .ttt-imagen-telon {
+  opacity: 1 !important;
+  background-color: var(--main-bg-color-white);
+  top: 0;
+}
+
+.ttt-card-carousel h6,
+.ttt-card-carousel p,
+.ttt-card-carousel button,
+.ttt-card-carousel img {
+  position: relative;
+  z-index: 2;
+  /* Asegura que el contenido esté por encima del telón */
+  transition: color 0.5s ease-in-out;
+}
+
+.ttt-card-carousel:hover h6,
+.ttt-card-carousel:hover p,
+.ttt-card-carousel:hover button {
+  color: white;
+  /* Cambia el color del texto a blanco */
+}
+
+.ttt-card-carousel:hover button,
+.ttt-card-carousel button:hover {
+  border-color: #f0f2f2 !important;
+  color: white !important;
+  /* Cambia el borde del botón a blanco */
+
+}
+
+.ttt-card-carousel button:hover {
+  background-color: transparent;
+  /* Mantiene el fondo del botón transparente */
+}
+
+#section-docentes .card:hover {
+  background-color: var(--bs-warning) !important;
+  color: var(--main-bg-color-white);
+}
+
+/* Tamaños máximos del container en diferentes tamaños de pantalla */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+/** CIRCULO */
+/* Contenedor del círculo */
+.circle-container {
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: 9% !important;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 0px;
+}
+
+/* Círculo principal tipo dona */
+.circle {
+  align-items: center !important;
+  align-content: center !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--main-bg-color-grey);
+  /*conic-gradient(#08BCFB 0 90deg, #003E7D 90deg 180deg, #08BCFB 180deg 270deg, #003E7D 270deg 360deg);*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/** Círculo interior que crea el hueco de la dona */
+.inner-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-bg-color-white);
+  border-radius: 50%;
+  z-index: 10;
+  margin-top: -65.5%;
+  margin-left: 33.5%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Divisiones de los cuadrantes */
+.quadrant {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.4;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+  -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#quadrant1 {
+  top: 0;
+  left: 0;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#quadrant2 {
+  top: 0;
+  right: 0;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+#quadrant3 {
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#quadrant4 {
+  bottom: 0;
+  right: 0;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+}
+
+/* Texto secciones */
+.text-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-sections div {
+  /*font-size: 18px;*/
+  transition: color 0.3s ease;
+}
+
+/* Texto oscuro al hacer clic */
+.text-dark {
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+.text-muted {
+  color: #6c757d;
+  opacity: 0.5;
+}
+
+/* Cuadrante al hacer clic: cambia opacidad y hace zoom */
+.quadrant.active {
+  opacity: 1;
+  background: var(--main-bg-color-warning);
+  /* var(--main-bg-circle-in-focus); */
+  transform: scale(1.1);
+}
+
+.levitate-on-hover {
+  transition: transform 0.3s ease !important;
+  -webkit-transition: transform 0.3s ease !important;
+  -moz-transition: transform 0.3s ease !important;
+  -ms-transition: transform 0.3s ease !important;
+  -o-transition: transform 0.3s ease !important;
+}
+
+.levitate-on-hover:hover {
+  transform: translateY(-10px) !important;
+  -webkit-transform: translateY(-10px) !important;
+  -moz-transform: translateY(-10px) !important;
+  -ms-transform: translateY(-10px) !important;
+  -o-transform: translateY(-10px) !important;
+}
+
+.glide__slide .glide__container .card .card-header a {
+  max-height: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+#navigation ul li a {
+  font-size: 1.1rem !important;
+}
+
+/* * CARD-BLUR - NOSOTROS */
+.card-blur-2 {
+  position: relative;
+  /*width: 300px;*/
+  height: 200px;
+  overflow: hidden;
+  /*background: url('path/to/image.jpg') center center / cover; */
+  /* Cambia la imagen de fondo aquí */
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5) !important;
+  /* Sombra en los lados derecho e inferior */
+  transition: transform 0.3s ease;
+}
+
+.card-blur-2:hover {
+  transform: scale(1.05);
+  /* Efecto de escalado al pasar el mouse */
+}
+
+.card-front-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /*background-color: rgba(255, 255, 255, 0.2) !important;*/
+  /* Fondo blanco con transparencia */
+  /*backdrop-filter: blur(10px) !important;*/
+  /* Efecto blur en el fondo */
+  border-radius: 12px;
+}
+
+.card-overlay-2 {
+  position: absolute;
+  bottom: -100%;
+  /* Comienza oculto debajo */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  /* Fondo blanco con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: bottom 0.3s ease;
+}
+
+.card-blur-2:hover .card-overlay-2 {
+  bottom: 0;
+  /* Mueve el overlay hacia arriba al hacer hover */
+}
+
+.card-text-2 {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+  /* Color del texto */
+}
+
+.img-shadow {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* * Cicular DIV*/
+.circular-div {
+  width: 250px;
+  /* Ajusta el tamaño del círculo */
+  height: 250px;
+  border-radius: 50%;
+  /* Hace que el div sea circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  /* Fondo blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra en la parte inferior */
+  font-weight: bold;
+  color: #333333;
+  /* Color del texto */
+}
+
+.icon-circle {
+  width: 80px;
+  /* Tamaño del círculo */
+  height: 80px;
+  border-radius: 50%;
+  /* Hace que el div sea circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  /* Color de fondo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra en el borde inferior */
+}
+
+.icon-circle i {
+  font-size: 36px;
+  /* Tamaño del icono */
+  /*color: #333333;*/
+  color: var(--main-bg-color-grey);
+}
+
+
+.text-hover {
+  /*color: #6c757d;*/
+  color: var(--main-bg-color-grey);
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  cursor: pointer;
+}
+
+.text-hover:hover {
+  color: var(--main-bg-color-grey);
+  /* #333333;*/
+  font-weight: bold;
+  /* Cambia a negrita */
+}
+
+.icon-line-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-text-color-grey);
+}
+
+.icon-line-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* Ajusta el ancho de la línea */
+  height: 2px;
+  /* Grosor de la línea */
+  background-color: var(--main-bg-color-warning);
+  /*#d3d3d3;*/
+  /* Color de la línea */
+  top: 50%;
+  /* Centra la línea verticalmente */
+  z-index: -1;
+  /* Coloca la línea detrás del icono */
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Coloca el círculo por encima de la línea */
+}
+
+.icon-circle i {
+  font-size: 36px;
+  /*color: #333333;*/
+}
+
+.swiper-slide .img-empresa {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  opacity: 0.8;
+}
+
+.swiper-slide img:hover,
+.swiper-slide .card:hover {
+  transform: scale(1.05);
+  /* Efecto de zoom al pasar el mouse */
+  opacity: 1;
+}
+
+/* //-- card  */
+.recursos img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recursos:hover img {
+  transform: scale(1.50);
+  -webkit-transform: scale(1.50);
+  -moz-transform: scale(1.50);
+  -ms-transform: scale(1.50);
+  -o-transform: scale(1.50);
+}
+
+.card h5 {
+  color: #012970 !important;
+}
+
+.card:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  background-color: #ebf5fb;
+  color: #012970;
+}
+
+.custom-card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover .img-wrapper img {
+  transform: scale(1.1);
+}
+
+#contacto i {
+  font-size: 38px !important;
+  color: #6610f2 !important;
+}
+
+/* //-- Redes sociales */
+.redes-sociales-contenedor {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1030;
+  background-color: #fff;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 8px;
+  gap: 15px;
+}
+
+.redes-sociales-contenedor a img {
+  transition: opacity 0.3s ease;
+  opacity: 0.8 !important;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.redes-sociales i {
+  font-size: 30px;
+  color: #012970;
+  transition: color 0.3s ease;
+  opacity: 0.8 !important;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.redes-sociales i:hover,
+.redes-sociales-contenedor a img:hover {
+  opacity: 1 !important;
+}
+
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 8px 0 0 8px;
+  padding: 10px 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-sidebar a {
+  color: #333;
+  /*font-size: 20px;*/
+  transition: color 0.3s;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.social-sidebar a:hover {
+  color: #0d6efd;
+  opacity: 1;
+}
+
+/* //-- Nos respaldan */
+#entidad-01,
+#entidad-02,
+#entidad-03 {
+  border-radius: 10px;
+}
+
+#entidad-01:hover,
+#entidad-02:hover,
+#entidad-03:hover {
+  background-color: #fff !important;
+}
+
+#entidad-01,
+#entidad-02,
+#entidad-03 {
+  transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  -o-transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+#entidad-01:hover {
+  box-shadow: 0 0 20px var(--bs-success) !important;
+  color: var(--bs-success) !important;
+}
+
+#entidad-02:hover {
+  box-shadow: 0 0 20px var(--color-entidad-02-blue) !important;
+  color: var(--color-entidad-02-blue);
+}
+
+#entidad-03:hover {
+  box-shadow: 0 0 20px var(--main-textcolor-info) !important;
+  color: var(--main-textcolor-info);
+}
+
+#entidad-01 img,
+#entidad-02 img,
+#entidad-03 img {
+  transition: transform 0.5s ease;
+}
+
+#entidad-01:hover img,
+#entidad-02:hover img,
+#entidad-03:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*-- Modal div archivos */
+#lista-archivos {
+  padding: 10px;
+  /*background-color: #f8f9fa;
+  border: 1px solid #ddd;*/
+  /*max-width: 400px;*/
+}
+
+.archivo-item {
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /*font-family: sans-serif;*/
+}
+
+/* -- Cover de la sec OBJETIVOS */
+.cover-bg::before {
+  /*content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  background: url('./assets/img/cuencas-vivas/componente-01.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  z-index: 0;*/
+}
+
+.cover-bg>* {
+  position: relative;
+  z-index: 1;
+}
+
+.text-blue {
+  color: blue !important;
+}
+
+.bg-gradient-imar-01,
+.front-background,
+.back-background {
+  background-color: linear-gradient(to right, var(--main-color-info-imar), var(--main-color-success-imar)) !important;
+}
+
+/*-- Border Radius */
+.rounded-10 {
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
+
+.text-info-imar {
+  color: var(--main-color-info-imar) !important;
+}
+
+.text-success-imar {
+  color: var(--main-color-success-imar) !important;
+}
+
+.img-hover {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.02);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover .image-overlay {
+  opacity: 1;
+}

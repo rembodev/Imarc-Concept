@@ -1,0 +1,103 @@
+/* Cuencas Vivas Theme */
+
+:root {
+    --cv-primary: #2d6a4f;
+    /* Forest Green */
+    --cv-secondary: #40916c;
+    /* Medium Green */
+    --cv-accent: #d4a373;
+    /* Earth/Sand */
+    --cv-bg: #fdfcf5;
+    /* Cream/Natural paper */
+    --cv-text: #1b4332;
+    --white: #ffffff;
+}
+
+body.cuencas-body {
+    background-color: var(--cv-bg);
+    color: var(--cv-text);
+}
+
+.cv-header {
+    background: rgba(255, 255, 255, 0.90) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* Bigger logo presence */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Outfit', sans-serif;
+    /* Setup in HTML head */
+    color: var(--cv-primary);
+}
+
+.btn-cv-primary {
+    background-color: var(--cv-primary);
+    color: var(--white);
+    border-radius: 40px;
+    padding: 12px 35px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cv-primary:hover {
+    background-color: var(--cv-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(45, 106, 79, 0.3);
+}
+
+/* Hero Specifics */
+.cv-hero-section {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+}
+
+.cv-hero-overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.cv-card {
+    background: var(--white);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(45, 106, 79, 0.15);
+}
+
+.cv-icon-box {
+    background: rgba(212, 163, 115, 0.1);
+    color: var(--cv-primary);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.cv-icon-box i {
+    font-size: 32px;
+}
+
+/* Map Section */
+.map-container {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+}

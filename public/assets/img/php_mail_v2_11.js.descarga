@@ -1,0 +1,29 @@
+function enviarMensaje() {
+    $('.loading').show();
+    $('.error-message').hide();
+    $('.sent-message').hide();
+    $.ajax({
+        url: 'php_mail/php_mail.php',
+        type: 'POST',
+        dataType: 'json',
+        data: $('#frmEmail').serialize(),
+    })
+    .done(function(response) {
+        //let data = eval(response);
+        $('.loading').hide();
+        $('.error-message').hide();
+        $('.sent-message').show();
+        console.log("success! " + response);
+    })
+    .fail(function(response) {
+        //let data = eval(response);
+        $('.loading').hide();
+        $('.error-message').hide();
+        $('.sent-message').show();
+        console.log("error! " + response);
+    })
+    .always(function(response) {
+        //let data = eval(response);
+        console.log("complete! " + response);
+});
+}
